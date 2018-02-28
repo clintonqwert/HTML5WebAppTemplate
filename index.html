@@ -11,61 +11,85 @@ All Rights Reserved.
 
 -->
 <html>
-    <head>
-        <title>HTML5, CSS(GRID), JavaScript(ES2018) Template</title>
 
-        <!-- Base style sheet -->
-        <link rel="stylesheet" href="css/style.css">
+<head>
+    <title>HTML5, CSS(GRID), JavaScript(ES2018) Template</title>
 
-        <!-- Media Queries -->
-        <!-- <link rel="stylesheet" href="css/media.css"> -->
-    </head>
+    <!-- Base local style sheet -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Application's Structure Area -->
-    <body>
+    <!-- Media Queries -->
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
+</head>
 
-        <!-- Grid Layout -->
-        <div id="wrapper" class="grid-frame">
+<!-- Application's Structure Area -->
+<body>
 
-            <!-- Header -->
-            <header id="header" class="grid-header area">HEADER</header>
-            
-            <!-- Nav Bar -->
-            <nav id="navigation" class="grid-nav area">
-                <ul>
+    <!-- Grid Layout -->
+    <div id="main-wrapper" class="grid-frame">
+
+        <!-- Nav Bar -->
+        <nav id="navigation-wrapper" class="grid-nav area">
+            <div id="menu-container" class="menu-flexbox">
+                <ul class="menu">
                     <li><a href="">Nav 1</a></li>
                     <li><a href="">Nav 2</a></li>
                     <li><a href="">Nav 3</a></li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
 
-            <!-- The Content -->
-            <div id="content" class="grid-content area">THE CONTENT</div>
+        <!-- Header -->
+        <header id="header-wrapper" class="grid-header area">
+            <div id="header-container" class="header flexbox">
+                <h1>HEADER</h1>
+            </div>
+        </header>
 
-            <!-- Sidebar -->
-            <aside id="sidebar" class="grid-side area">MY SIDEBAR</aside>
+        <!-- The Content -->
+        <section id="content-wrapper" class="grid-content area">
+            <div id="content-container" class="content flexbox">
+                <h1>THE MAIN CONTENT</h1>   
+            </div>
+        </section>
+            
+        <!-- Sidebar -->
+        <aside id="sidebar-wrapper" class="grid-side area">
+            <div id="sidebar-container" class="sidebar flexbox">
+                <h1>
+                    MY SIDEBAR
+                </h1>
+            </div>
+        </aside>
 
-            <!-- The Footer -->
-            <footer id="footer" class="grid-foot area">FOOTER</footer>
+        <!-- The Footer -->
+        <footer id="footer-wrapper" class="grid-foot area">
+            <div id="footer-container" class="footer flexbox">
+                <h1>
+                    FOOTER
+                </h1>
+            </div>
+        </footer>
 
-        </div>
+    </div>
 
-        <!-- Scripts section (JS) -->
-        <div id="scripts">
+    <!-- Scripts section (JS) -->
+    <div id="scripts">
 
-            <!-- 3rd Party Libraries ie. JQuery (check for latest)-->
-            <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script> -->
+        <!-- 3rd Party Libraries ie. JQuery (check for latest)-->
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script> -->
 
-            <!--
+        <!--
              Load your app core here, while not strictly W3C compliant it guarentees
              that the basic HTML gets loaded and you have something to start
              debugging if any of your code fails.
            -->
 
-            <script type="text/javascript" src='scripts/app.js' defer></script>
-            <script type="text/javascript" src='scripts/main.js' defer></script>
+        <script type="text/javascript" src='scripts/app.js' defer></script>
+        <script type="text/javascript" src='scripts/main.js' defer></script>
 
-        </div>
+    </div>
 
-    </body>
+</body>
+
 </html>

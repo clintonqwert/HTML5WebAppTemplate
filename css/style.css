@@ -16,9 +16,25 @@ All Rights Reserved.
  }
 
  body{
-     background-color: rgb(255, 246, 246);
+     background-color: rgb(194, 193, 193);
  }
 
+ h1{
+     align-self: center;
+ }
+
+ /* GRID FRAME/CONTAINER */
+ .grid-frame{
+     display: grid;
+     grid-gap: 5px;
+     grid-template: 
+        [row1-start] "navbar navbar navbar navbar" 50px [row1-end]
+        [row2-start] "headbar headbar headbar headbar" 100px [row2-end]
+        [row3-start] "sidecontent thecontent thecontent thecontent" 800px [row3-end]
+        [row4-start] "footcontent footcontent footcontent footcontent" 50px [row4-end] ;
+ }
+
+ /* GRID AREAS/ITEMS */
  .area{
     border-style: solid;
     border-width: 3px;
@@ -26,40 +42,78 @@ All Rights Reserved.
     border-radius: 5px;
  }
 
- .grid-frame{
-     display: grid;
-     grid-template: 
-        "headbar headbar headbar headbar"
-        "navbar navbar navbar navbar"
-        "sidecontent thecontent thecontent thecontent"
-        "footcontent footcontent footcontent footcontent";
-     grid-gap: 1em;
-     
- }
-
  .grid-header{
-     grid-area: headbar;
-     
+     grid-area: headbar;   
  }
 
  .grid-nav{
      grid-area: navbar;
-
  }
 
  .grid-content{
      grid-area: thecontent;
-
-
+     margin: 5px;
  }
 
  .grid-side{
      grid-area: sidecontent;
-
+     margin: 5px;
  }
 
  .grid-foot{
      grid-area: footcontent;
-
  }
 
+ /* FLEX-BOXES */
+.flexbox {
+    display: flex;
+    background-color: rgb(241, 244, 247);
+    height: 100%;
+}
+
+/* navigation bar */
+ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* header */
+.header{
+    justify-content: center;
+}
+
+/* content */
+.content{
+    justify-content: center;
+}
+
+/* sidebar */
+.sidebar{
+    justify-content: center;
+}
+
+/* footer */
+.footer{
+    justify-content: center;
+}
