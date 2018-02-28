@@ -7,5 +7,16 @@ Author: Clinton Jay Ramonida.
 
 Copyright (c) 2018.
 All Rights Reserved.
-
  */
+// ===================================================================
+'use strict';
+ 
+//Import all the necessary scripts here
+import { App } from './app.js';
+
+document.addEventListener('DOMContentLoaded', ( event ) => {
+
+    let app = new App();
+    // app.run();
+
+});

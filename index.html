@@ -8,88 +8,122 @@ Author: Clinton Jay Ramonida.
 
 Copyright (c) 2018.
 All Rights Reserved.
-
 -->
+
 <html>
+    <head>
+        <title>HTML5, CSS(GRID), JavaScript(ES2018) Template</title>
 
-<head>
-    <title>HTML5, CSS(GRID), JavaScript(ES2018) Template</title>
+        <!-- Web App Icon -->
+        <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon"> 
 
-    <!-- Base local style sheet -->
-    <link rel="stylesheet" href="css/style.css">
+        <!-- Base local style sheet -->
+        <link rel="stylesheet" href="css/style.css">
 
-    <!-- Media Queries -->
-    <!-- <link rel="stylesheet" href="css/media.css"> -->
-</head>
+        <!-- Media Queries -->
+        <link rel="stylesheet" href="css/media.css">
 
-<!-- Application's Structure Area -->
-<body>
+        <!-- Add local styles here -->
+        <!-- <style type="text/css"></style> -->
+    </head>
 
-    <!-- Grid Layout -->
-    <div id="main-wrapper" class="grid-frame">
+    <!--
+        Application's Structure Area 
+    All the "wrapper" in a form of CSS GRID Layout.
+    Each grid "area" has a "container" in a form of flexbox. 
+    -->
+    <body>
+        <!-- Grid Layout -->
+        <div id="main-wrapper" class="grid-frame">
 
-        <!-- Nav Bar -->
-        <nav id="navigation-wrapper" class="grid-nav area">
-            <div id="menu-container" class="menu-flexbox">
-                <ul class="menu">
-                    <li><a href="">Nav 1</a></li>
-                    <li><a href="">Nav 2</a></li>
-                    <li><a href="">Nav 3</a></li>
-                </ul>
-            </div>
-        </nav>
+            <!-- Nav Bar -->
+            <nav id="navigation-wrapper" class="grid-nav area">
+                <div id="menu-container" class="menu flexbox">
 
-        <!-- Header -->
-        <header id="header-wrapper" class="grid-header area">
-            <div id="header-container" class="header flexbox">
-                <h1>HEADER</h1>
-            </div>
-        </header>
+                    <div class="flexitem">
+                        <ul>
+                            <li><a href="">Nav 1</a></li>
+                            <li><a href="">Nav 2</a></li>
+                            <li><a href="">Nav 3</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </nav>
 
-        <!-- The Content -->
-        <section id="content-wrapper" class="grid-content area">
-            <div id="content-container" class="content flexbox">
-                <h1>THE MAIN CONTENT</h1>   
-            </div>
-        </section>
-            
-        <!-- Sidebar -->
-        <aside id="sidebar-wrapper" class="grid-side area">
-            <div id="sidebar-container" class="sidebar flexbox">
-                <h1>
-                    MY SIDEBAR
-                </h1>
-            </div>
-        </aside>
+            <!-- Header -->
+            <header id="header-wrapper" class="grid-header area">
+                <div id="header-container" class="header flexbox">
+                    
+                    <div class="flexitem">
+                        <h1>HEADER</h1>
+                    </div>
+                    
+                </div>
+            </header>
 
-        <!-- The Footer -->
-        <footer id="footer-wrapper" class="grid-foot area">
-            <div id="footer-container" class="footer flexbox">
-                <h1>
-                    FOOTER
-                </h1>
-            </div>
-        </footer>
+            <!-- The Content -->
+            <main id="content-wrapper" class="grid-content area">
+                <div id="content-container" class="content flexbox">
+                    
+                    <div class="flexitem">
+                        <h2>THE MAIN CONTENT</h2>
+                    </div>
+                    
+                    <div class="spacer flexitem"></div>
 
-    </div>
+                    <!-- Add your HTML5 tags here to structure your app's UI -->
+                    
+                    <div id="results-gridbox" class="grid-frame-child">
+                        
+                        <div id="results-area" class="grid-results area-child"> <!-- Dynamic updates here -->
+                            <h3>Results Area: Dynamic Updates here!</h3>
+                        </div>
 
-    <!-- Scripts section (JS) -->
-    <div id="scripts">
+                        <div class="grid-buttons area-child">
+                            <div id="button-container" class="buttons flexbox">
+                                <button id="start-button" class="btn flexitem">START</button>
+                                <button id="stop-button" class="btn flexitem">STOP</button>
+                            </div>   
+                        </div>
 
-        <!-- 3rd Party Libraries ie. JQuery (check for latest)-->
-        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script> -->
+                    </div>
 
-        <!--
-             Load your app core here, while not strictly W3C compliant it guarentees
-             that the basic HTML gets loaded and you have something to start
-             debugging if any of your code fails.
-           -->
+                </div>
+            </main>
+                
+            <!-- Sidebar -->
+            <aside id="sidebar-wrapper" class="grid-side area">
+                <div id="sidebar-container" class="sidebar flexbox">
+                    <div class="flexitem">
+                        <h2>MY SIDEBAR</h2>
+                    </div>
+                </div>
+            </aside>
 
-        <script type="text/javascript" src='scripts/app.js' defer></script>
-        <script type="text/javascript" src='scripts/main.js' defer></script>
+            <!-- The Footer -->
+            <footer id="footer-wrapper" class="grid-foot area">
+                <div id="footer-container" class="footer flexbox">
+                    <div class="flexitem">
+                        <h1>FOOTER</h1>
+                    </div>
+                </div>
+            </footer>
 
-    </div>
+        </div>
 
-</body>
+        <!-- Scripts section (JS) -->
+        <div id="scripts">
+            <!-- 3rd Party Libraries ie. JQuery (check for latest)-->
+            <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script> -->
 
+            <!--
+                Load your app core here, while not strictly W3C compliant it guarentees
+                that the basic HTML gets loaded and you have something to start
+                debugging if any of your code fails.
+            -->
+
+            <script type="module" src='scripts/main.js' defer></script>
+        </div>
+    </body>
 </html>
