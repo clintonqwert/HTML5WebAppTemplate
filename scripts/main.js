@@ -4,6 +4,7 @@ Title: Main Control JS.
 Created on Mon Feb 19 2018.
 
 Author: Clinton Jay Ramonida.
+Collaborator: Scott Henshaw. 
 
 Copyright (c) 2018.
 All Rights Reserved.
