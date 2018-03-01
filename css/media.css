@@ -41,4 +41,9 @@ All Rights Reserved.
     .spacer{
         height: 150px;
     }
+
+    #results-area{
+        height: 300px;
+        width: 230px;
+    }
 }
