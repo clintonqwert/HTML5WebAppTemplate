@@ -12,6 +12,7 @@ All Rights Reserved.
 
 <html>
     <head>
+        <!-- PLEASE CHANGE to the name of your WebApp -->
         <title>HTML5, CSS(GRID), JavaScript(ES2018) Template</title>
 
         <!-- Web App Icon -->
@@ -27,10 +28,11 @@ All Rights Reserved.
         <!-- <style type="text/css"></style> -->
     </head>
 
-    <!--
-        Application's Structure Area 
-    All the "wrapper" in a form of CSS GRID Layout.
-    Each grid "area" has a "container" in a form of flexbox. 
+    <!--        ****PLEASE READ****
+            Application's Structure Details: 
+    All the "wrapper" is in a form of CSS GRID Layout.
+    Each grid "area" has a "container" in a form of "flexbox".
+    And each flexbox "container" contains "flexitems".  
     -->
     <body>
         <!-- Grid Layout -->
@@ -66,14 +68,20 @@ All Rights Reserved.
             <main id="content-wrapper" class="grid-content area">
                 <div id="content-container" class="content flexbox">
                     
+                    <!-- Add your HTML5 tags here to structure your app's UI -->
+
                     <div class="flexitem">
                         <h2>THE MAIN CONTENT</h2>
                     </div>
                     
+                    <!-- Added a spacer between(main content header and results gridbox) two flex items -->
                     <div class="spacer flexitem"></div>
 
-                    <!-- Add your HTML5 tags here to structure your app's UI -->
-                    
+                    <!--       ****PLEASE READ****
+                        This is div called a "gridbox" which is a combination of grid and flexbox.
+                        Its a grid container, but is also a child of grid because its inside of a grid frame ("main wrapper") 
+                        Its a flex item because its inside a flexbox container (content-container). 
+                     -->
                     <div id="results-gridbox" class="grid-frame-child">
                         
                         <div class="grid-results area-child"> <!-- Dynamic updates here -->
@@ -122,7 +130,6 @@ All Rights Reserved.
                 that the basic HTML gets loaded and you have something to start
                 debugging if any of your code fails.
             -->
-
             <script type="module" src='scripts/main.js' defer></script>
         </div>
     </body>
